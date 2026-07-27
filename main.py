@@ -41,4 +41,4 @@ def predict_query(
         columns= features
     )
     prediction = model_dt.predict(input_df)[0]
-    return = {"predict_price is": float (prediction)}
+    return {"predict_price is": float(prediction)}
