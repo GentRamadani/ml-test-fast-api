@@ -2,7 +2,10 @@ from fastapi import FastAPI
 
 app = FastAPI()
 
-@app.get("/get_home")
+@app.get("/")
 def home():
-    return {"message": "hello from fastapi"}
-    
+    return {"message": "hello from fastapi ml test"}
+
+@app.get("/sum")
+def add_numbers(a: int, b: int):
+    return {"result": a + b}
